@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RGB Color Studio</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-9 col-lg-7">
+
+                <div class="card p-4 p-md-5">
+
+                    <!-- TÍTULO -->
+                    <h1 class="text-center mb-3">
+                        RGB Color Studio
+                    </h1>
+
+                    <p class="subtitle">
+                        Explora y crea colores usando valores RGB
+                    </p>
+
+
+                    <!-- CUADRO DE COLOR -->
+                    <div
+                        id="colorBox"
+                        class="color-box mb-4"
+                    ></div>
+
+
+                    <!-- INFORMACIÓN DEL COLOR -->
+                    <div class="color-info text-center mb-4">
+
+                        <p class="mb-2">
+                            RGB
+                        </p>
+
+                        <h5 id="rgbCode">
+                            rgb(128, 128, 128)
+                        </h5>
+
+                        <hr class="border-secondary">
+
+                        <p class="mb-2">
+                            Hexadecimal
+                        </p>
+
+                        <h4 id="hexCode">
+                            #808080
+                        </h4>
+
+                    </div>
+
+
+                    <!-- COLOR PICKER -->
+                    <div class="text-center mb-4">
+
+                        <label
+                            for="colorPicker"
+                            class="form-label"
+                        >
+                            🎨 Selecciona un color
+                        </label>
+
+                        <input
+                            type="color"
+                            id="colorPicker"
+                            class="form-control form-control-color mx-auto"
+                            value="#808080"
+                            title="Selecciona un color"
+                        >
+
+                    </div>
+
+
+                    <!-- ROJO -->
+                    <div class="control-group mb-3">
+
+                        <label
+                            for="red"
+                            class="form-label"
+                        >
+                            🔴 Rojo
+                        </label>
+
+                        <div class="row align-items-center">
+
+                            <div class="col-8 col-sm-9">
+
+                                <input
+                                    type="range"
+                                    class="form-range"
+                                    id="red"
+                                    min="0"
+                                    max="255"
+                                    value="128"
+                                >
+
+                            </div>
+
+                            <div class="col-4 col-sm-3">
+
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="redInput"
+                                    min="0"
+                                    max="255"
+                                    value="128"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- VERDE -->
+                    <div class="control-group mb-3">
+
+                        <label
+                            for="green"
+                            class="form-label"
+                        >
+                            🟢 Verde
+                        </label>
+
+                        <div class="row align-items-center">
+
+                            <div class="col-8 col-sm-9">
+
+                                <input
+                                    type="range"
+                                    class="form-range"
+                                    id="green"
+                                    min="0"
+                                    max="255"
+                                    value="128"
+                                >
+
+                            </div>
+
+                            <div class="col-4 col-sm-3">
+
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="greenInput"
+                                    min="0"
+                                    max="255"
+                                    value="128"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- AZUL -->
+                    <div class="control-group mb-3">
+
+                        <label
+                            for="blue"
+                            class="form-label"
+                        >
+                            🔵 Azul
+                        </label>
+
+                        <div class="row align-items-center">
+
+                            <div class="col-8 col-sm-9">
+
+                                <input
+                                    type="range"
+                                    class="form-range"
+                                    id="blue"
+                                    min="0"
+                                    max="255"
+                                    value="128"
+                                >
+
+                            </div>
+
+                            <div class="col-4 col-sm-3">
+
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="blueInput"
+                                    min="0"
+                                    max="255"
+                                    value="128"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TEXTO INFERIOR -->
+                    <p class="text-center mt-4 mb-0 text-secondary">
+                        Ajusta los controles o selecciona un color para ver sus valores.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
